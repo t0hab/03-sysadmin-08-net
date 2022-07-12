@@ -8,7 +8,7 @@ show ip route x.x.x.x/32
 show bgp x.x.x.x/32
 ```
 ### Ответ
-```
+```bash
 route-views>show ip route 45.150.27.184
 Routing entry for 45.150.27.0/24
   Known via "bgp 6447", distance 20, metric 0
@@ -192,7 +192,7 @@ route-views>
 
 ### Ответ
 
-```
+```bash
 vagrant@vagrant:~$ sudo modprobe -v dummy numdummies=2
 insmod /lib/modules/5.4.0-91-generic/kernel/drivers/net/dummy.ko numdummies=0 numdummies=2
 vagrant@vagrant:~$ lsmod | grep dummy
