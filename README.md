@@ -251,7 +251,27 @@ vagrant@vagrant:~$
 
 3. Проверьте открытые TCP порты в Ubuntu, какие протоколы и приложения используют эти порты? Приведите несколько примеров.
 
+### Ответ
+```bash
+vagrant@vagrant:~$ netstat -ln4
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN
+```
+---
+
 4. Проверьте используемые UDP сокеты в Ubuntu, какие протоколы и приложения используют эти порты?
+
+### Ответ
+```bash
+vagrant@vagrant:~$ netstat -ln4
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+udp        0      0 127.0.0.53:53           0.0.0.0:*
+udp        0      0 10.0.2.15:68            0.0.0.0:*
+```
+---
 
 5. Используя diagrams.net, создайте L3 диаграмму вашей домашней сети или любой другой сети, с которой вы работали. 
 
